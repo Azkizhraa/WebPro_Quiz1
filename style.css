@@ -386,3 +386,60 @@ button.toggle:hover {
     background-color: #f4978e;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stack the body content vertically */
+        height: auto; /* Allow the height to adjust based on content */
+    }
+
+    .container-profile, .container-food, .container-hometown, .container-tourist, .container-index {
+        max-width: 100%; /* Allow containers to take full width */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .profile-section {
+        flex-direction: column; /* Stack profile section items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .profile-photo {
+        width: 100%; /* Make photo responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .content-wrapper-hometown, .content-wrapper-tourist {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center contents */
+    }
+
+    .description-hometown, .description-tourist {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Space between elements */
+    }
+
+    .food-section {
+        width: 100%; /* Full width for food sections */
+        margin: 10px 0; /* Vertical margin between food sections */
+    }
+
+    .hometown-img, .tourist-img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px 0; /* Vertical margin for images */
+    }
+
+    #back-to-top {
+        bottom: 10px; /* Adjust button position */
+        right: 10px; /* Adjust button position */
+    }
+
+    nav {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items */
+    }
+
+    nav a {
+        margin: 10px 0; /* Vertical margin for nav links */
+    }
+}
