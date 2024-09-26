@@ -1,0 +1,388 @@
+body {
+    font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+    background-color: #fff5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page-btn, .back-home-btn, #back-to-top, .toggle-btn, button.toggle {
+    font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #ffccd5;
+    padding: 20px;
+    border-bottom: 2px solid #f4a9a8;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff87ab;
+    margin: 0;
+}
+
+h1 {
+    color: #f4978e;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%; /* Centering the heading */
+}
+
+h1, h2, h3, p {
+    color: #f4978e;
+}
+
+h2 {
+    margin: 20px 0;
+    color: #f4978e;
+    text-align: center;
+    width: 100%; /* Full width for header */
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ff87ab;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f4978e;
+}
+
+/* Highlight the current active link */
+nav a.active {
+    color: #f4978e;
+}
+
+main {
+    padding: 20px;
+}
+
+p {
+    color: #ff7e79;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Back-to-top button styling */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffccd5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #f4978e;
+}
+
+/* Adding underline style for the heading */
+h1::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: #f4978e;
+    margin: 10px auto 20px;
+    border-radius: 10px;
+}
+
+/* Buttons styling */
+.page-btn {
+    background-color: #f4978e;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-btn:hover {
+    background-color: #f77b72;
+    transform: translateY(-2px);
+}
+
+.page-btn:active {
+    transform: translateY(0px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-home-btn {
+    display: block;
+    background-color: #f4978e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    width: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-home-btn:hover {
+    background-color: #f77b72;
+}
+
+/*TOURIST.HTML STYLING*/
+.container-tourist {
+    background-color: #fbeee0;
+    max-width: 900px; /* Increased width for better layout */
+    margin: 20px auto;
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid #f4978e;
+}
+
+.content-wrapper-tourist {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center the contents */
+    margin-top: 20px;
+}
+
+.description-tourist {
+    background-color: #fff5f5; /* Light pink background */
+    border: 2px solid #f4978e; /* Border color */
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px; /* Space between description-tourist and images */
+    width: 100%; /* Ensure it takes full width */
+    text-align: left; /* Align text to the left */
+}
+
+.tourist-img {
+    width: 250px; /* Fixed width for the images */
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px; /* Space between images */
+    border: 2px solid #f4978e;
+}
+
+/*INDEX.HTML STYLING*/
+.container-index {
+    background-color: #fbeee0;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid #f4978e;
+}
+
+/* Cat GIF styling */
+.cat-gif {
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 4px solid #f4978e;
+}
+
+/*PROFILE.HTML STYLING*/
+.container-profile {
+    background-color: #fbeee0;
+    max-width: 90%; /* Increased width for a wider look */
+    margin: 20px auto;
+    padding: 30px 40px;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid #f4978e;
+
+    /* Restrict height to prevent growing too tall */
+    max-height: 80vh;
+    overflow-y: auto; /* Scrollable if content exceeds height */
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    border-radius: 15px;
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border: 4px solid #f4978e;
+}
+
+.profile-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Smaller borders for individual sections */
+.section-box-profile {
+    padding: 20px;
+    background-color: #fff5f5;
+    border: 2px solid #f4978e;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding media query for smaller screens */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*HOMETOWN.HTML STYLING*/
+.container-hometown {
+            background-color: #fbeee0;
+            max-width: 900px; /* Increased width to accommodate side-by-side layout */
+            margin: 20px auto;
+            padding: 40px 30px;
+            border-radius: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 3px solid #f4978e;
+        }
+
+        .content-wrapper-hometown {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            justify-content: space-between; /* Space between items */
+            margin-top: 20px;
+        }
+
+        .description-hometown {
+            background-color: #fff5f5; /* Light pink background */
+            border: 2px solid #f4978e; /* Border color */
+            border-radius: 15px;
+            padding: 20px;
+            flex: 1; /* Allow it to grow and fill space */
+            margin-right: 20px; /* Space between description-hometown and image */
+        }
+
+        .hometown-img {
+            width: 300px; /* Fixed width for the image */
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #f4978e; /* Border color */
+            border-radius: 15px;
+        }
+
+        .additional-img {
+            width: 300px; /* Full width for the additional image */
+            height: auto;
+            border-radius: 15px;
+            margin-top: 20px; /* Margin to separate from the previous image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #f4978e; /* Border color */
+            border-radius: 15px;
+        }
+
+        .image-wrapper-hometown {
+            display: flex;
+            flex-direction: column; /* Stack images vertically */
+            align-items: center; /* Center images */
+            margin-left: 20px; /* Space between description-hometown and additional image */
+        }
+
+/*FOOD.HTML STYLING*/
+/* Central container-food with curved edges and border */
+.container-food {
+    background-color: #fbeee0;
+    max-width: 900px; /* Increased width to accommodate side-by-side layout */
+    max-height: 90vh; /* Limit the height to 90% of the viewport height */
+    margin: 20px auto;
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 3px solid #f4978e; /* Adding the same border */
+    text-align: center; /* Centering the content */
+    overflow: auto; /* Allow scrolling if content exceeds the height */
+}
+
+/* Styling for each food section */
+.food-section {
+    background-color: #fff5f5; /* Light pink background */
+    border: 2px solid #f4978e; /* Thicker outline */
+    border-radius: 20px; /* Rounded corners */
+    margin: 20px;
+    padding: 20px;
+    width: 300px; /* Fixed width for each food section */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.food-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Toggle button */
+.toggle-btn {
+    background-color: #f4978e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    width: fit-content;
+}
+
+.toggle-btn:hover {
+    background-color: #f77b72;
+}
+
+/* Style for the "Click-to-show" buttons */
+button.toggle {
+    background-color: #ffa8b6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+button.toggle:hover {
+    background-color: #f4978e;
+}
+

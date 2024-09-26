@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Food - Quiz1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-food">
+        <h1>Web Programming Quiz 1</h1>
+        <h2>Local Food ⟡𓌉◯𓇋₊˚⊹♡</h2>
+
+        <!-- Local Food 1 section -->
+        <div class="food-section" id="food1">
+            <img src="localFood1.jpeg" alt="Local Food 1" class="food-img">
+            <p>When visiting Tangerang City/South Tangerang, most people will probably recommend the laksa menu.</p>
+            <button class="toggle-btn" onclick="Description('desc1')">Description</button>
+            <p id="desc1" style="display: none;">Laksa is a soupy, noodle-based dish made from rice flour. Unlike Betawi & Malaysian laksa, Tangerang laksa has thicker noodles like spaghetti. 
+                Laksa is usually served with a rich, coconutty chicken broth. Potatoes, green beans, chicken pieces or eggs are also added. Laksa in Tangerang usually sells at a price starting from Rp.20K per portion.
+            </p>
+        </div>
+
+        <!-- Local Food 2 section -->
+        <div class="food-section" id="food2">
+            <img src="localFood2.webp" alt="Local Food 2" class="food-img">
+            <p>If you are visiting Tangerang, you can try another specialty which is Sweet Sate Gerendeng.</p>
+            <button class="toggle-btn" onclick="Description('desc2')">Description</button>
+            <p id="desc2" style="display: none;">Sweet sate Gerendang is a traditional food made from selected beef (such as head) which has a chewy & soft texture when bitten.
+                The basic seasoning of this sweet sate gerendeng consists of liquid brown sugar mixed with fine garlic, coriander, peppercorns, and other spices.
+                Like its name, this specialty food can be found in the Gerendeng area of Tangerang City with a price of Rp.5K per stitch.
+            </p>
+        </div>
+
+        <button class="back-home-btn" onclick="window.location.href='index.html';">Back to Homepage</button>
+    </div>
+
+    <script>
+        // Function to toggle the descriptions
+        function Description(descId) {
+            var description = document.getElementById(descId);
+            description.style.display = (description.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
